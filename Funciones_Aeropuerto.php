@@ -27,10 +27,9 @@ $array4 = array(
 );
 
 foreach ($array4 as $array_4) {
+    $personas = $array_4["personas"];
 
 if ($array_4["Avion"] == $text) {
-    $res = $array_4["personas"];
-    echo $res;
 }
 }
 
