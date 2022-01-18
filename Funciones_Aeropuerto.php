@@ -2,6 +2,7 @@
 
 
 $text = "Iberia-WE44";
+$EJ = 0;
 $array4 = array(
     array("Avion" => "Vueling-AE12", "personas" => 90),
     array("Avion" => "Volotea-EA21"  , "personas" => 75),
@@ -28,11 +29,15 @@ $array4 = array(
 
 foreach ($array4 as $array_4) {
     $personas = $array_4["personas"];
+    $Avion = $array_4["Avion"];
 
 if ($array_4["Avion"] == $text) {
-}
+    $EJ = $EJ + $personas;
+    $res = $EJ/count($Avion);
+    }
 }
 
+echo $res;
 
 
 #FUNCIÓN Media_Pasajeros
