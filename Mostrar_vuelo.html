@@ -8,21 +8,23 @@
     <link rel="stylesheet" type="text/css" href="Hoja_Estilo.css">
 </head>
 <body>
-    <fieldset>
-    <h1>Mostrar vuelos</h1>
-    </fieldset>
-</br>
-<h3>Escriba aquí su vuelo</h3>
-    <input id = "text" name="texto" type="text" placeholder="Escriba aquí" required></br></br>
-<select name="Mostrar_Vuelos">
-    <option value="">---Selecciona una opción---</option>
-    <option value="Media_Pasajeros">Media de pasajeros</option>
-    <option value="Ultimos_Destinos">Últimos destinos</option>
-    <option value="Fabricante">Fabricante</option>
-    <option value="Minutos_Totales_Vuelo">Minutos totales de vuelo</option>
-</select>
-</br></br>
-<input name="" type="reset" value="Borrar">
-<input name="" type="submit" value="Enviar">
+    <form method= "POST" target= "_blank" action="Mostrar_vuelo.php">
+        <fieldset>
+        <h1>Mostrar vuelos</h1>
+        </fieldset>
+    </br>
+    <h3>Escriba aquí su vuelo</h3>
+        <input id = "text" name="texto" type="text" placeholder="Escriba aquí" required></br></br>
+    <select name="Mostrar_Vuelos">
+        <option value="">---Selecciona una opción---</option>
+        <option value="Media_Pasajeros">Media de pasajeros</option>
+        <option value="Ultimos_Destinos">Últimos destinos</option>
+        <option value="Fabricante">Fabricante</option>
+        <option value="Minutos_Totales_Vuelo">Minutos totales de vuelo</option>
+    </select>
+    </br></br>
+    <input name="" type="reset" value="Borrar">
+    <input name="" type="submit" value="Enviar">
+</form>
 </body>
 </html>
