@@ -13,18 +13,18 @@ $array1 = array(
     "Volotea-EA21" => "Roma"
 );
 
-
 $array2  = array(
-    "Vueling-AE12" => ""
-    "Volotea-EA21" => ""
-    "Iberia-WE44" => ""
-    "Ryanair-EW44" => ""
-    "Vueling-ZK87" => ""
-    "Volotea-UA21" => ""
-    "Iberia-WH44" => ""
-    "Ryanair-EL00" => ""
+    "Vueling-AE12" => "Boeing"
+    "Volotea-EA21" => "Airbus"
+    "Iberia-WE44" => "Airbus"
+    "Ryanair-EW44" => "Boeing"
+    "Vueling-ZK87" => "Airbus"
+    "Volotea-UA21" => "Boeing"
+    "Iberia-WH44" => "Boeing"
+    "Ryanair-EL00" => "Airbus"
 );
-$ = array(
+
+$array3 = array(
     "" => ""
     "" => ""
     "" => ""
@@ -33,6 +33,13 @@ $ = array(
     "" => ""
 );
 
-print_r ($array1);
+$array4 = array(
+    "" => ""
+    "" => ""
+    "" => ""
+    "" => ""
+    "" => ""
+    "" => ""
+);
 
 ?>
