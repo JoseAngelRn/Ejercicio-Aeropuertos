@@ -30,10 +30,11 @@ $array4 = array(
 foreach ($array4 as $array_4) {
     $Pasajeros = $array_4["Pasajeros"];
     $Vuelos = $array_4["Vuelos"];
+    #$Cantidad = array_count_values(array_column($array_4("Vuelos"))[$Pasajeros]);
 
 if ($array_4["Vuelos"] == $text) {
     $EJ = $EJ + $Pasajeros;
-    $res = $EJ/count($Vuelos);
+    $res = $EJ;
     }
 }
 
