@@ -24,4 +24,5 @@ switch ($select) {
     echo "Elija otra opción";
         break;
 }
+
 ?>
