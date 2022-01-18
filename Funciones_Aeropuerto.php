@@ -4,36 +4,36 @@
 $text = "Iberia-WE44";
 $EJ = 0;
 $array4 = array(
-    array("Avion" => "Vueling-AE12", "personas" => 90),
-    array("Avion" => "Volotea-EA21"  , "personas" => 75),
-    array("Avion" => "Iberia-WE44", "personas" => 100),
-    array("Avion" => "Ryanair-EW44" , "personas" => 60),
-    array("Avion" => "Vueling-ZK87"  , "personas" => 77),
-    array("Avion" => "Volotea-UA21"  , "personas" => 93),
-    array("Avion" => "Iberia-WH44"  , "personas" => 86),
-    array("Avion" => "Ryanair-EL00" , "personas" => 75),
-    array("Avion" => "Vueling-AE12"  , "personas" => 87),
-    array("Avion" => "Volotea-EA21"  , "personas" => 97),
-    array("Avion" => "Iberia-WE44" , "personas" => 81),
-    array("Avion" => "Ryanair-EW44" , "personas" => 75),
-    array("Avion" => "Vueling-ZK87"  , "personas" => 87),
-    array("Avion" => "Volotea-UA21" , "personas" => 90),
-    array("Avion" => "Iberia-WH44"  , "personas" => 84),
-    array("Avion" => "Ryanair-EL00" , "personas" => 67),
-    array("Avion" => "Vueling-AE12" , "personas" => 86),
-    array("Avion" => "Volotea-EA21"  , "personas" => 66),
-    array("Avion" => "Iberia-WE44" , "personas" => 40),
-    array("Avion" => "Ryanair-EW44"  , "personas" => 77),
-    array("Avion" => "Vueling-ZK87" , "personas" => 82)
+    array("Vuelos" => "Vueling-AE12", "Pasajeros" => 90),
+    array("Vuelos" => "Volotea-EA21"  , "Pasajeros" => 75),
+    array("Vuelos" => "Iberia-WE44", "Pasajeros" => 100),
+    array("Vuelos" => "Ryanair-EW44" , "Pasajeros" => 60),
+    array("Vuelos" => "Vueling-ZK87"  , "Pasajeros" => 77),
+    array("Vuelos" => "Volotea-UA21"  , "Pasajeros" => 93),
+    array("Vuelos" => "Iberia-WH44"  , "Pasajeros" => 86),
+    array("Vuelos" => "Ryanair-EL00" , "Pasajeros" => 75),
+    array("Vuelos" => "Vueling-AE12"  , "Pasajeros" => 87),
+    array("Vuelos" => "Volotea-EA21"  , "Pasajeros" => 97),
+    array("Vuelos" => "Iberia-WE44" , "Pasajeros" => 81),
+    array("Vuelos" => "Ryanair-EW44" , "Pasajeros" => 75),
+    array("Vuelos" => "Vueling-ZK87"  , "Pasajeros" => 87),
+    array("Vuelos" => "Volotea-UA21" , "Pasajeros" => 90),
+    array("Vuelos" => "Iberia-WH44"  , "Pasajeros" => 84),
+    array("Vuelos" => "Ryanair-EL00" , "Pasajeros" => 67),
+    array("Vuelos" => "Vueling-AE12" , "Pasajeros" => 86),
+    array("Vuelos" => "Volotea-EA21"  , "Pasajeros" => 66),
+    array("Vuelos" => "Iberia-WE44" , "Pasajeros" => 40),
+    array("Vuelos" => "Ryanair-EW44"  , "Pasajeros" => 77),
+    array("Vuelos" => "Vueling-ZK87" , "Pasajeros" => 82)
 );
 
 foreach ($array4 as $array_4) {
-    $personas = $array_4["personas"];
-    $Avion = $array_4["Avion"];
+    $Pasajeros = $array_4["Pasajeros"];
+    $Vuelos = $array_4["Vuelos"];
 
-if ($array_4["Avion"] == $text) {
-    $EJ = $EJ + $personas;
-    $res = $EJ/count($Avion);
+if ($array_4["Vuelos"] == $text) {
+    $EJ = $EJ + $Pasajeros;
+    $res = $EJ/count($Vuelos);
     }
 }
 
@@ -42,9 +42,9 @@ echo $res;
 
 #FUNCIÓN Media_Pasajeros
 #function Media_Pasajeros($text){
- #   $suma_Personas = array_sum($array4);
+ #   $suma_Pasajeros = array_sum($array4);
   #  $total_Vuelos = count($array4);
-   # $media = $suma_Personas/$total_Vuelos;
+   # $media = $suma_Pasajeros/$total_Vuelos;
     #print "$media";
 #}
 
