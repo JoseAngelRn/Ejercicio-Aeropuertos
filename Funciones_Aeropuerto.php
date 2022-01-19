@@ -1,22 +1,23 @@
 <?php
 INCLUDE 'Arraysdb.php';
+INCLUDE 'Mostrar_vuelo.php';
 
 $EJ = 0;
 $EJ2 = 0;
 
 #FUNCION MEDIA DE PASAJEROS------------------------------------------------------------------------------------------
+function Media_Pasajeros($text, $array4, $EJ){
 foreach ($array4 as $array_4) {
     $Pasajeros = $array_4["Pasajeros"];
     $Vuelos = $array_4["Vuelo"];
-    #$Cantidad = array_count_values(array_column($array_4("Vuelos"))[$Pasajeros]);
 
-if ($array_4["Vuelo"] == $text) {
+if ($Vuelos == $text) {
     $EJ = $EJ + $Pasajeros;
     $res = $EJ;
     }
 }
-echo $res;
-echo "<br>";
+echo "La media de pasajeros es; ".$res;
+}
 
 #FUNCIÓN SABER DESTINO-------------------------------------------------------------------------------------------------
 function Ultimos_Destinos($text, $array1){
