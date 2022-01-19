@@ -19,6 +19,7 @@ if ($Vuelos == $text) {
 echo "La media de pasajeros es: ".$res."<br>";
 }
 
+
 #FUNCIÓN SABER DESTINO-------------------------------------------------------------------------------------------------
 function Ultimos_Destinos($text, $array1){
 foreach ($array1 as $array_1) {
@@ -43,7 +44,6 @@ if ($Vuelos == $text) {
     }
 }
 }
-
 #Fabricante($text, $array2);
 
 #FUNCIÓN SABER MINUTOS TOTALES DE VUELO----------------------------------------------------------------------------------
@@ -59,9 +59,9 @@ if ($Vuelos == $text) {
 }
 echo "Los minutos totales de vuelo han sido: ".$res;
 }
-
 #Minutos_Totales_Vuelo($text, $array3, $EJ2);
 
+#---------------------------------------------------------------------------
 
 
 
