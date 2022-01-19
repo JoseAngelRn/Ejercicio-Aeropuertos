@@ -1,11 +1,10 @@
 <?php
 INCLUDE 'Arraysdb.php';
 
-$text = "Vueling-AE12";
 $EJ = 0;
 $EJ2 = 0;
 
-#FUNCION MEDIA DE PASAJEROS
+#FUNCION MEDIA DE PASAJEROS------------------------------------------------------------------------------------------
 foreach ($array4 as $array_4) {
     $Pasajeros = $array_4["Pasajeros"];
     $Vuelos = $array_4["Vuelo"];
@@ -19,7 +18,7 @@ if ($array_4["Vuelo"] == $text) {
 echo $res;
 echo "<br>";
 
-#FUNCIÓN SABER DESTINO
+#FUNCIÓN SABER DESTINO-------------------------------------------------------------------------------------------------
 function Ultimos_Destinos($text, $array1){
 foreach ($array1 as $array_1) {
     $Destino = $array_1["Destino"];
@@ -30,9 +29,9 @@ if ($Vuelos == $text) {
     }
 }
 }
-Ultimos_Destinos($text, $array1);
+#Ultimos_Destinos($text, $array1);
 
-#FUNCIÓN SABER FABRICANTE
+#FUNCIÓN SABER FABRICANTE-------------------------------------------------------------------------------------------
 function Fabricante($text, $array2){
 foreach ($array2 as $array_2) {
     $Fabricante = $array_2["Fabricante"];
@@ -44,9 +43,9 @@ if ($Vuelos == $text) {
 }
 }
 
-Fabricante($text, $array2);
+#Fabricante($text, $array2);
 
-#FUNCIÓN SABER MINUTOS TOTALES DE VUELO
+#FUNCIÓN SABER MINUTOS TOTALES DE VUELO----------------------------------------------------------------------------------
 function Minutos_Totales_Vuelo($text, $array3, $EJ2){
 foreach ($array3 as $array_3) {
     $Duracion_Minutos = $array_3["Duracion_Minutos"];
@@ -60,7 +59,12 @@ if ($Vuelos == $text) {
 echo "Los minutos totales de vuelo han sido: ".$res;
 }
 
-Minutos_Totales_Vuelo($text, $array3, $EJ2);
+#Minutos_Totales_Vuelo($text, $array3, $EJ2);
+
+
+
+
+
 
 #FUNCIÓN Media_Pasajeros
 #function Media_Pasajeros($text){
