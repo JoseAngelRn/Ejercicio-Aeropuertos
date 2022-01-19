@@ -5,7 +5,6 @@ $text = "Vueling-AE12";
 $EJ = 0;
 $EJ2 = 0;
 
-
 $array1 = array(
     array("Vuelos" => "Vueling-AE12", "Destino" => "Milán"),
     array("Vuelos" => "Volotea-EA21", "Destino" => "Roma"),
