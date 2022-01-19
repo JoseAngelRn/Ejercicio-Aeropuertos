@@ -1,6 +1,6 @@
 <?php
-INCLUDE 'Arraysdb.php';
-INCLUDE 'Mostrar_vuelo.php';
+INCLUDE_ONCE 'Arraysdb.php';
+INCLUDE_ONCE 'Mostrar_vuelo.php';
 
 $EJ = 0;
 $EJ2 = 0;
@@ -16,7 +16,7 @@ if ($Vuelos == $text) {
     $res = $EJ;
     }
 }
-echo "La media de pasajeros es; ".$res;
+echo "La media de pasajeros es: ".$res."<br>";
 }
 
 #FUNCIÓN SABER DESTINO-------------------------------------------------------------------------------------------------
