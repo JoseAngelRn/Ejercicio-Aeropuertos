@@ -83,17 +83,17 @@ echo $res;
 echo "<br>";
 
 #FUNCIÓN SABER DESTINO
-function Destino($text, $array1){
+function Ultimos_Destinos($text, $array1){
 foreach ($array1 as $array_1) {
     $Destino = $array_1["Destino"];
     $Vuelos = $array_1["Vuelos"];
 
-if ($array_1["Vuelos"] == $text) {
-    echo $array_1["Destino"]."<br>";
+if ($Vuelos == $text) {
+    echo "Los destinos a los que ha ido el avión han sido: ".$Destino."<br>";
     }
 }
 }
-Destino($text, $array1);
+Ultimos_Destinos($text, $array1);
 
 #FUNCIÓN SABER FABRICANTE
 function Fabricante($text, $array2){
@@ -101,25 +101,29 @@ foreach ($array2 as $array_2) {
     $Fabricante = $array_2["Fabricante"];
     $Vuelos = $array_2["Vuelos"];
 
-if ($array_2["Vuelos"] == $text) {
-    echo "El fabricante es: ".$array_2["Fabricante"]."<br>";
+if ($Vuelos == $text) {
+    echo "El fabricante es: ".$Fabricante."<br>";
     }
 }
 }
-fabricante($text, $array2);
+
+Fabricante($text, $array2);
 
 #FUNCIÓN SABER MINUTOS TOTALES DE VUELO
+function Minutos_Totales_Vuelo($text, $array3, $EJ2){
 foreach ($array3 as $array_3) {
     $Duracion_Minutos = $array_3["Duracion_Minutos"];
     $Vuelos = $array_3["Vuelos"];
 
-if ($array_3["Vuelos"] == $text) {
+if ($Vuelos == $text) {
     $EJ2 = $EJ2 + $Duracion_Minutos;
     $res = $EJ2;
     }
 }
-echo $res;
-echo "<br>";
+echo "Los minutos totales de vuelo han sido: ".$res;
+}
+
+Minutos_Totales_Vuelo($text, $array3, $EJ2);
 
 #FUNCIÓN Media_Pasajeros
 #function Media_Pasajeros($text){
