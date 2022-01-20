@@ -1,5 +1,5 @@
 <?php
-INCLUDE_ONCE 'Funciones_Aeropuerto.php';
+INCLUDE_ONCE 'Funciones_Mostrar_Vuelo.php';
 
 #RECOGIDA DE VARIABLES
 $select = $_POST["Mostrar_Vuelos"];
