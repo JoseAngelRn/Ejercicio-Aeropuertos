@@ -1,6 +1,8 @@
 <?php
 INCLUDE_ONCE 'Arraysdb.php';
 INCLUDE_ONCE 'Mostrar_vuelo.php';
+INCLUDE_ONCE 'Estadistica_Ciudad.php';
+
 
 $EJ = 0;
 $EJ2 = 0;
@@ -69,10 +71,14 @@ function Numero_Total_Pasajeros($array4, $EJ2){
     foreach ($array4 as $array_4) {
         $Pasajeros = $array_4["Pasajeros"];
         $Vuelos = $array_4["Vuelo"];
-    
+        
+        $EJ2 = $EJ2 + $Pasajeros;
+        $res = $EJ2;
+
     }
-    echo "El número total de pasajeros es: ".$res;
+    echo "El número total de pasajeros de todos los vuelo es: ".$res;
 }
+#Numero_Total_Pasajeros($array4, $EJ2);
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
 

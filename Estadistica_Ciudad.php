@@ -1,7 +1,7 @@
 <?php
+INCLUDE_ONCE 'Funciones_Aeropuerto.php';
 
 
-#RECOGIDA DE VARIABLES
-$text = $_POST["texto"];
+print Numero_Total_Pasajeros($array4, $EJ2);
 
 ?>
