@@ -61,8 +61,56 @@ echo "Los minutos totales de vuelo han sido: ".$res;
 }
 #Minutos_Totales_Vuelo($text, $array3, $EJ2);
 
-#---------------------------------------------------------------------------
+#FUNCIÓN MEDIA DE HORAS VOLADAS DE TODOS LOS VUELOS---------------------------------------------------------------------------
 
+
+#FUNCIÓN NÚMERO TOTAL DE PASAJEROS DE TODOS LOS VUELOS---------------------------------------------------------------------------
+function Numero_Total_Pasajeros($array4, $EJ2){
+    foreach ($array4 as $array_4) {
+        $Pasajeros = $array_4["Pasajeros"];
+        $Vuelos = $array_4["Vuelo"];
+    
+    }
+    echo "El número total de pasajeros es: ".$res;
+}
+
+#FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
+
+
+#FUNCIÓN DESTINO CON MÁS CONEXIONES---------------------------------------------------------------------------
+
+
+#FUNCIÓN DESTINO CON MENOS CONEXIONES---------------------------------------------------------------------------
+
+
+#FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
+
+
+#FUNCIÓN LAS VECES QUE SE HAN IDO A UNA DETERMINADA CIUDAD---------------------------------------------------------------------------
+
+
+#FUNCIÓN CUAL ES LA CIUDAD MÁS VISITADA---------------------------------------------------------------------------
+
+
+#FUNCIÓN CUALES SON LAS CIUDADES MENOS VISITADAS---------------------------------------------------------------------------
+
+
+#FUNCIÓN DESTINOS DEL AVIÓN---------------------------------------------------------------------------
+
+
+#FUNCIÓN FABRICANTE DEL AVIÓN---------------------------------------------------------------------------
+
+
+#FUNCIÓN MINUTOS TOTALES VOLADOS---------------------------------------------------------------------------
+
+
+#FUNCIÓN MEDIA DE HORAS VOLADAS---------------------------------------------------------------------------
+
+
+#FUNCIÓN MEDIA DE PASAJEROS---------------------------------------------------------------------------
+
+
+#FUNCIÓN PASAJEROS TOTALES---------------------------------------------------------------------------
 
 
 
