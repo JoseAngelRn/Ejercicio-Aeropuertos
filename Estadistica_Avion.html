@@ -10,12 +10,24 @@
 <body>
     <form method= "POST" target= "_blank" action="Estadistica_Avion.php">
         <fieldset>
-            <h1>Estadisticas avión</h1>
-            </fieldset>
-        </br>
-        <h3>Seleccione el avión que desea consultar</h3>
-            <input id = "text" name="texto" type="text" placeholder="Escriba aquí" required></br></br>
-
+        <h1>Estadisticas del avión</h1>
+        </fieldset>
+    <label><h3>Escriba el avión que ha elegido</h3></label>
+    <input id = "text" name="text" type="text" placeholder="Escriba aquí" required>
+    </br>
+    <h3>Elija aquí el avión</h3>
+    <select name="Estadisticas_avion">
+        <option value="">---Selecciona un vuelo---</option>
+        <option value="Vueling-AE12">Vueling-AE12</option>
+        <option value="Volotea-EA21">Volotea-EA21</option>
+        <option value="Iberia-WE44">Iberia-WE44</option>
+        <option value="Ryanair-EW44">Ryanair-EW44</option>
+        <option value="Vueling-ZK87">Vueling-ZK87</option>
+        <option value="Volotea-UA21">Volotea-UA21</option>
+        <option value="Iberia-WH44">Iberia-WH44</option>
+        <option value="Ryanair-EL00">Ryanair-EL00</option>
+    </select>
+    </br></br>
         <input name="" type="reset" value="Borrar">
         <input name="" type="submit" value="Enviar">
     </from>
