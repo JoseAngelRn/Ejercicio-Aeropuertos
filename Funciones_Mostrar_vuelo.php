@@ -3,7 +3,6 @@ INCLUDE_ONCE 'Arraysdb.php';
 INCLUDE_ONCE 'Mostrar_vuelo.php';
 
 $EJ = 0;
-$EJ2 = 0;
 
 #FUNCION MEDIA DE PASAJEROS------------------------------------------------------------------------------------------
 function Media_Pasajeros($text, $array4, $EJ){
@@ -47,14 +46,14 @@ if ($Vuelos == $text) {
 #Fabricante($text, $array2);
 
 #FUNCIÓN SABER MINUTOS TOTALES DE VUELO----------------------------------------------------------------------------------
-function Minutos_Totales_Vuelo($text, $array3, $EJ2){
+function Minutos_Totales_Vuelo($text, $array3, $EJ){
 foreach ($array3 as $array_3) {
     $Duracion_Minutos = $array_3["Duracion_Minutos"];
     $Vuelos = $array_3["Vuelo"];
 
 if ($Vuelos == $text) {
-    $EJ2 = $EJ2 + $Duracion_Minutos;
-    $res = $EJ2;
+    $EJ = $EJ + $Duracion_Minutos;
+    $res = $EJ;
     }
 }
 echo "Los minutos totales de vuelo han sido: ".$res;

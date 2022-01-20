@@ -1,4 +1,7 @@
 <?php
+INCLUDE_ONCE 'Arraysdb.php';
+INCLUDE_ONCE 'Estadistica_Avion.php';
+
 
 
 #FUNCIÓN DESTINOS DEL AVIÓN---------------------------------------------------------------------------
