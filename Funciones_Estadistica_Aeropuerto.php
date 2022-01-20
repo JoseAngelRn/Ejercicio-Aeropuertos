@@ -2,6 +2,8 @@
 INCLUDE_ONCE 'Arraysdb.php';
 INCLUDE_ONCE 'Estadistica_Aeropuerto.php';
 
+$EJ = 0;
+
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE TODOS LOS VUELOS---------------------------------------------------------------------------
 
 
@@ -15,7 +17,7 @@ function Numero_Total_Pasajeros($array4, $EJ){
         $res = $EJ;
 
     }
-    echo "El número total de pasajeros de todos los vuelo es: ".$res;
+    echo "El número total de pasajeros de todos los vuelos es: ".$res."<br>";
 }
 #Numero_Total_Pasajeros($array4, $EJ2);
 
