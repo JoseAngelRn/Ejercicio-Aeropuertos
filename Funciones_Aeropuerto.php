@@ -64,7 +64,6 @@ function Media_Horas_Total($array3, $EJ){
     $contador = 0;
     foreach ($array3 as $array_3) {
         $Duracion_Minutos = $array_3["Duracion_Minutos"];
-        $Vuelos = $array_3["Vuelo"];
     
         $EJ = $EJ + $Duracion_Minutos;
         $contador++;
@@ -79,7 +78,6 @@ function Media_Horas_Total($array3, $EJ){
 function Numero_Total_Pasajeros($array4, $EJ){
     foreach ($array4 as $array_4) {
         $Pasajeros = $array_4["Pasajeros"];
-        $Vuelos = $array_4["Vuelo"];
         
         $EJ = $EJ + $Pasajeros;
     }
@@ -106,7 +104,6 @@ function Aviones_fabricante($array2){
 
     foreach ($array2 as $array_2) {
         $Fabricante = $array_2["Fabricante"];
-        $Vuelos = $array_2["Vuelo"];
         
     if ($Fabricante == "Boeing") {
         $contador_Boeing++;
