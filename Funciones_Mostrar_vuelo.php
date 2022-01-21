@@ -30,7 +30,6 @@ if ($Vuelos == $text) {
     }
 }
 }
-#Ultimos_Destinos($text, $array1);
 
 #FUNCIÓN SABER FABRICANTE-------------------------------------------------------------------------------------------
 function Fabricante($text, $array2){
@@ -43,7 +42,6 @@ if ($Vuelos == $text) {
     }
 }
 }
-#Fabricante($text, $array2);
 
 #FUNCIÓN SABER MINUTOS TOTALES DE VUELO----------------------------------------------------------------------------------
 function Minutos_Totales_Vuelo($text, $array3, $EJ){
@@ -58,14 +56,4 @@ if ($Vuelos == $text) {
 }
 echo "Los minutos totales de vuelo han sido: ".$res;
 }
-#Minutos_Totales_Vuelo($text, $array3, $EJ2);
-
-
-#FUNCIÓN Media_Pasajeros
-#function Media_Pasajeros($text){
- #   $suma_Pasajeros = array_sum($array4);
-  #  $total_Vuelos = count($array4);
-   # $media = $suma_Pasajeros/$total_Vuelos;
-    #print "$media";
-#}
 ?>
