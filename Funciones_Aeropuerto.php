@@ -6,18 +6,19 @@ $EJ = 0;
 
 #FUNCION MEDIA DE PASAJEROS------------------------------------------------------------------------------------------
 function Media_Pasajeros($text, $array4, $EJ){
+$contador = 0;
 foreach ($array4 as $array_4) {
     $Pasajeros = $array_4["Pasajeros"];
     $Vuelos = $array_4["Vuelo"];
 
 if ($Vuelos == $text) {
     $EJ = $EJ + $Pasajeros;
-    $res = $EJ;
+    $contador++;
     }
 }
-echo "La media de pasajeros es: ".$res."<br>";
+    $EJ = $EJ/$contador;
+    echo "La media de pasajeros es: ".$EJ."<br>";
 }
-
 
 #FUNCIÓN SABER DESTINO-------------------------------------------------------------------------------------------------
 function Ultimos_Destinos($text, $array1){
