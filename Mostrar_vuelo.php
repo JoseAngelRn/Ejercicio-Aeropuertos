@@ -4,6 +4,8 @@ INCLUDE 'Funciones_Aeropuerto.php';
 #RECOGIDA DE VARIABLES
 $text = $_POST["Mostrar_Vuelos"];
 
+#REPRESENTACIÓN
+
 Media_Pasajeros($text, $array4, $EJ);
 Ultimos_Destinos($text, $array1);
 Fabricante($text, $array2);
