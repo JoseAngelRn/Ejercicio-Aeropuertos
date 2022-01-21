@@ -100,13 +100,46 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
 }
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
+function Aviones_fabricante($array2){
+    $contador_Boeing = 0;
+    $contador_Airbus = 0;
 
+    foreach ($array2 as $array_2) {
+        $Fabricante = $array_2["Fabricante"];
+        $Vuelos = $array_2["Vuelo"];
+        
+    if ($Fabricante == "Boeing") {
+        $contador_Boeing++;
+        }
+    elseif($Fabricante == "Airbus"){
+        $contador_Airbus++; 
+        }
+    }
+    echo "Números aviones Boeing: ".$contador_Boeing."<br>";
+    echo "Números aviones Airbus: ".$contador_Airbus."<br>";
+}
 
 #FUNCIÓN DESTINO CON MÁS CONEXIONES---------------------------------------------------------------------------
+function Destino_mas(){
 
+
+
+
+
+
+    
+}
 
 #FUNCIÓN DESTINO CON MENOS CONEXIONES---------------------------------------------------------------------------
+function Destino_menos(){
 
+
+
+
+
+
+    
+}
 
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
 
