@@ -20,7 +20,7 @@ if ($Vuelos == $text) {
 }
 
 #FUNCIÓN SABER ULTIMOS DESTINO-------------------------------------------------------------------------------------------------
-function Ultimos_Destinos($text, $array1){
+function Destinos($text, $array1){
     echo "Los destinos a los que ha ido el avión han sido: ";
 foreach ($array1 as $array_1) {
     $Destino = $array_1["Destino"];
@@ -33,9 +33,6 @@ if ($Vuelos == $text) {
 }
     echo "<br>";
 }
-
-#FUNCIÓN SABER DESTINOS-------------------------------------------------------------------------------------------------
-
 
 #FUNCIÓN SABER FABRICANTE-------------------------------------------------------------------------------------------
 function Fabricante($text, $array2){

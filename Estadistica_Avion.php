@@ -4,7 +4,7 @@ INCLUDE 'Funciones_Aeropuerto.php';
 #RECOGIDA VARIABLES
 $text = $_POST["Estadisticas_avion"];
 
-ULtimos_Destinos($text, $array1);
+Destinos($text, $array1);
 Fabricante($text, $array2);
 Minutos_Totales_Vuelo($text, $array3, $EJ);
 Media_Horas($text, $array3, $EJ);
