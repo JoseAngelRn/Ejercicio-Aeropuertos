@@ -54,12 +54,14 @@ if ($Vuelos == $text) {
     $res = $EJ;
     }
 }
-echo "Los minutos totales de vuelo han sido: ".$res;
+echo "Los minutos totales de vuelo han sido: ".$res."<br>";
 }
 
 
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE TODOS LOS VUELOS---------------------------------------------------------------------------
+
+
 
 
 #FUNCIÓN NÚMERO TOTAL DE PASAJEROS DE TODOS LOS VUELOS---------------------------------------------------------------------------
@@ -75,6 +77,19 @@ function Numero_Total_Pasajeros($array4, $EJ){
     echo "El número total de pasajeros de todos los vuelos es: ".$res."<br>";
 }
 
+#FUNCIÓN PASAJEROS TOTALES POR AVION---------------------------------------------------------------------------
+function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
+    foreach ($array4 as $array_4) {
+        $Pasajeros = $array_4["Pasajeros"];
+        $Vuelos = $array_4["Vuelo"];
+        
+    if ($Vuelos == $text) {
+        $EJ = $EJ + $Pasajeros;
+        $res = $EJ;
+        }
+    }
+    echo "El número total de pasajeros del avion: ".$res."<br>";
+}
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
 
@@ -120,39 +135,13 @@ function Destinos_Visitados($text, $array1){
     }
     }
 
-#FUNCIÓN MINUTOS TOTALES VOLADOS---------------------------------------------------------------------------
-function Minutos_Totales_Vuelo($text, $array3, $EJ){
-    foreach ($array3 as $array_3) {
-        $Duracion_Minutos = $array_3["Duracion_Minutos"];
-        $Vuelos = $array_3["Vuelo"];
-    
-    if ($Vuelos == $text) {
-        $EJ = $EJ + $Duracion_Minutos;
-        $res = $EJ;
-        }
-    }
-    echo "Los minutos totales de vuelo han sido: ".$res."<br>";
-    }
-
 #FUNCIÓN MEDIA DE HORAS VOLADAS---------------------------------------------------------------------------
 
 
 #FUNCIÓN MEDIA DE PASAJEROS---------------------------------------------------------------------------
 
 
-#FUNCIÓN PASAJEROS TOTALES---------------------------------------------------------------------------
-function Numero_Total_Pasajeros($array4, $text, $EJ){
-    foreach ($array4 as $array_4) {
-        $Pasajeros = $array_4["Pasajeros"];
-        $Vuelos = $array_4["Vuelo"];
-        
-    if ($Vuelos == $text) {
-        $EJ = $EJ + $Pasajeros;
-        $res = $EJ;
-        }
-    }
-    echo "El número total de pasajeros del avion: ".$res."<br>";
-}
+
 
 */
 
