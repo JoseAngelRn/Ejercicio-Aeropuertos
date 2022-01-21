@@ -37,7 +37,6 @@ if ($Vuelos == $text) {
 #FUNCIÓN SABER DESTINOS-------------------------------------------------------------------------------------------------
 
 
-
 #FUNCIÓN SABER FABRICANTE-------------------------------------------------------------------------------------------
 function Fabricante($text, $array2){
 foreach ($array2 as $array_2) {
@@ -63,16 +62,17 @@ if ($Vuelos == $text) {
 echo "Los minutos totales de vuelo han sido: ".$EJ."<br>";
 }
 
-
-
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE TODOS LOS VUELOS---------------------------------------------------------------------------
 function Media_Horas_Total($array3, $EJ){
+    $contador = 0;
     foreach ($array3 as $array_3) {
         $Duracion_Minutos = $array_3["Duracion_Minutos"];
         $Vuelos = $array_3["Vuelo"];
     
         $EJ = $EJ + $Duracion_Minutos;
+        $contador++;
     }
+        $EJ = $EJ/$contador;
         $EJ = $EJ/60;
         echo "La media de horas voladas de todos los vuelos es: ".$EJ." Horas"."<br>";
     }
@@ -105,16 +105,10 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
 
 
-
-
 #FUNCIÓN DESTINO CON MÁS CONEXIONES---------------------------------------------------------------------------
 
 
 #FUNCIÓN DESTINO CON MENOS CONEXIONES---------------------------------------------------------------------------
-
-
-
-
 
 
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
@@ -127,10 +121,6 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
 
 
 #FUNCIÓN CUALES SON LAS CIUDADES MENOS VISITADAS---------------------------------------------------------------------------
-
-
-
-
 
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE UN VUELO---------------------------------------------------------------------------
