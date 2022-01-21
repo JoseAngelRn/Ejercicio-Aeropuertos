@@ -63,7 +63,7 @@ echo "Los minutos totales de vuelo han sido: ".$res;
 
 
 #FUNCIÓN NÚMERO TOTAL DE PASAJEROS DE TODOS LOS VUELOS---------------------------------------------------------------------------
-/*function Numero_Total_Pasajeros($array4, $EJ){
+function Numero_Total_Pasajeros($array4, $EJ){
     foreach ($array4 as $array_4) {
         $Pasajeros = $array_4["Pasajeros"];
         $Vuelos = $array_4["Vuelo"];
@@ -74,7 +74,7 @@ echo "Los minutos totales de vuelo han sido: ".$res;
     }
     echo "El número total de pasajeros de todos los vuelos es: ".$res."<br>";
 }
-#Numero_Total_Pasajeros($array4, $EJ2);
+
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
 
@@ -106,7 +106,7 @@ echo "Los minutos totales de vuelo han sido: ".$res;
 
 
 
-
+/*
 
 #FUNCIÓN DESTINOS DEL AVIÓN---------------------------------------------------------------------------
 function Destinos_Visitados($text, $array1){
@@ -116,18 +116,6 @@ function Destinos_Visitados($text, $array1){
     
     if ($Vuelos == $text) {
         echo "Destinos: ".$Destino."<br>";
-        }
-    }
-    }
-
-#FUNCIÓN FABRICANTE DEL AVIÓN---------------------------------------------------------------------------
-function Fabricante($text, $array2){
-    foreach ($array2 as $array_2) {
-        $Fabricante = $array_2["Fabricante"];
-        $Vuelos = $array_2["Vuelo"];
-    
-    if ($Vuelos == $text) {
-        echo "El fabricante es: ".$Fabricante."<br>";
         }
     }
     }
