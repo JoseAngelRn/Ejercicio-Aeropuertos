@@ -66,7 +66,16 @@ echo "Los minutos totales de vuelo han sido: ".$EJ."<br>";
 
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE TODOS LOS VUELOS---------------------------------------------------------------------------
-
+function Media_Horas_Total($array3, $EJ){
+    foreach ($array3 as $array_3) {
+        $Duracion_Minutos = $array_3["Duracion_Minutos"];
+        $Vuelos = $array_3["Vuelo"];
+    
+        $EJ = $EJ + $Duracion_Minutos;
+    }
+        $EJ = $EJ/60;
+        echo "La media de horas voladas de todos los vuelos es: ".$EJ." Horas"."<br>";
+    }
 
 
 #FUNCIÓN NÚMERO TOTAL DE PASAJEROS DE TODOS LOS VUELOS---------------------------------------------------------------------------
@@ -94,6 +103,7 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
 }
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
+
 
 
 
@@ -139,17 +149,5 @@ function Media_Horas($text, $array3, $EJ){
         $EJ = $EJ/60;
         echo "La media de horas voladas es: ".$EJ." Horas"."<br>";
     }
-
-#FUNCIÓN MEDIA DE PASAJEROS---------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
 
 ?>

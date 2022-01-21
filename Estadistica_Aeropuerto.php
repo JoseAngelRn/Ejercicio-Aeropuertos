@@ -2,8 +2,8 @@
 INCLUDE 'Funciones_Aeropuerto.php';
 
 
-#
-print Numero_Total_Pasajeros($array4, $EJ);
+Media_Horas_Total($array3, $EJ);
+Numero_Total_Pasajeros($array4, $EJ);
 #
 #
 #
