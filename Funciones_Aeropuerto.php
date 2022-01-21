@@ -1,7 +1,6 @@
 <?php
 INCLUDE 'Arraysdb.php';
 
-
 $EJ = 0;
 
 #FUNCION MEDIA DE PASAJEROS------------------------------------------------------------------------------------------
@@ -20,17 +19,24 @@ if ($Vuelos == $text) {
     echo "La media de pasajeros es: ".$EJ."<br>";
 }
 
-#FUNCIÓN SABER DESTINO-------------------------------------------------------------------------------------------------
+#FUNCIÓN SABER ULTIMOS DESTINO-------------------------------------------------------------------------------------------------
 function Ultimos_Destinos($text, $array1){
+    echo "Los destinos a los que ha ido el avión han sido: ";
 foreach ($array1 as $array_1) {
     $Destino = $array_1["Destino"];
     $Vuelos = $array_1["Vuelo"];
-
+    
 if ($Vuelos == $text) {
-    echo "Los destinos a los que ha ido el avión han sido: ".$Destino."<br>";
+    
+    echo $Destino." ";
     }
 }
+    echo "<br>";
 }
+
+#FUNCIÓN SABER DESTINOS-------------------------------------------------------------------------------------------------
+
+
 
 #FUNCIÓN SABER FABRICANTE-------------------------------------------------------------------------------------------
 function Fabricante($text, $array2){
@@ -52,10 +58,9 @@ foreach ($array3 as $array_3) {
 
 if ($Vuelos == $text) {
     $EJ = $EJ + $Duracion_Minutos;
-    $res = $EJ;
     }
 }
-echo "Los minutos totales de vuelo han sido: ".$res."<br>";
+echo "Los minutos totales de vuelo han sido: ".$EJ."<br>";
 }
 
 
@@ -72,10 +77,8 @@ function Numero_Total_Pasajeros($array4, $EJ){
         $Vuelos = $array_4["Vuelo"];
         
         $EJ = $EJ + $Pasajeros;
-        $res = $EJ;
-
     }
-    echo "El número total de pasajeros de todos los vuelos es: ".$res."<br>";
+    echo "El número total de pasajeros de todos los vuelos es: ".$EJ."<br>";
 }
 
 #FUNCIÓN PASAJEROS TOTALES POR AVION---------------------------------------------------------------------------
@@ -86,10 +89,9 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
         
     if ($Vuelos == $text) {
         $EJ = $EJ + $Pasajeros;
-        $res = $EJ;
         }
     }
-    echo "El número total de pasajeros del avion: ".$res."<br>";
+    echo "El número total de pasajeros del avion: ".$EJ."<br>";
 }
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
@@ -123,18 +125,6 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
 
 
 /*
-
-#FUNCIÓN DESTINOS DEL AVIÓN---------------------------------------------------------------------------
-function Destinos_Visitados($text, $array1){
-    foreach ($array1 as $array_1) {
-        $Destino = $array_1["Destino"];
-        $Vuelos = $array_1["Vuelo"];
-    
-    if ($Vuelos == $text) {
-        echo "Destinos: ".$Destino."<br>";
-        }
-    }
-    }
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS---------------------------------------------------------------------------
 
