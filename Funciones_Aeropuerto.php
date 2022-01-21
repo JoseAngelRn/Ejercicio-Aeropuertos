@@ -73,7 +73,6 @@ function Media_Horas_Total($array3, $EJ){
         echo "La media de horas voladas de todos los vuelos es: ".$EJ." Horas"."<br>";
     }
 
-
 #FUNCIÓN NÚMERO TOTAL DE PASAJEROS DE TODOS LOS VUELOS---------------------------------------------------------------------------
 function Numero_Total_Pasajeros($array4, $EJ){
     foreach ($array4 as $array_4) {
@@ -139,16 +138,48 @@ function Destino_menos(){
 }
 
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
+function Numero_Ciudad_Total(){
 
+
+
+
+
+
+    
+}
 
 #FUNCIÓN LAS VECES QUE SE HAN IDO A UNA DETERMINADA CIUDAD---------------------------------------------------------------------------
+function Numero_Ciudad(){
 
+
+
+
+
+
+    
+}
 
 #FUNCIÓN CUAL ES LA CIUDAD MÁS VISITADA---------------------------------------------------------------------------
+function Ciudad_mas(){
 
+
+
+
+
+
+    
+}
 
 #FUNCIÓN CUALES SON LAS CIUDADES MENOS VISITADAS---------------------------------------------------------------------------
+function Ciudad_menos(){
 
+
+
+
+
+
+    
+}
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE UN VUELO---------------------------------------------------------------------------
 function Media_Horas($text, $array3, $EJ){
