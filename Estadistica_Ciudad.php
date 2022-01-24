@@ -7,6 +7,4 @@ Numero_Ciudad($array1);
 Ciudad_mas($array1);
 Ciudad_menos($array1);
 
-
-
 ?>
