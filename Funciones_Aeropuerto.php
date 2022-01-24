@@ -187,29 +187,61 @@ function Destino_mas($array1){
 }
 */
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
-function Numero_Ciudad_Total(){
+function Numero_Ciudad_Total($array1){
+        foreach ($array1 as $array_1) {
+        $Destino = $array_1["Destino"];
+        
+    $o = str_word_count($Destino);
+        
 
-
+echo $o."<br>";
 
 
 
 
     
 }
-
+}
 #FUNCIÓN LAS VECES QUE SE HAN IDO A UNA DETERMINADA CIUDAD---------------------------------------------------------------------------
-function Numero_Ciudad(){
-
-
-
-
-
-
+function Numero_Ciudad($array1){
+        $contador_Milan = 0;
+        $contador_Roma = 0;
+        $contador_Estambul = 0;
+        $contador_Madrid = 0;
+        $contador_Lima = 0;
+        $contador_Bilbao = 0;
     
-}
+        foreach ($array1 as $array_1) {
+            $Destino = $array_1["Destino"];
+        if ($Destino == "Milán") {
+            $contador_Milan++;
+            }
+        elseif($Destino == "Roma"){
+            $contador_Roma++; 
+            }
+        elseif($Destino == "Estambul"){
+            $contador_Estambul++; 
+            }
+        elseif($Destino == "Madrid"){
+            $contador_Madrid++; 
+            }
+        elseif($Destino == "Lima"){
+            $contador_Lima++; 
+            }
+        elseif($Destino == "Bilbao"){
+            $contador_Bilbao++; 
+            }
+        }
+        echo "Veces que se ha ido a Milán: ".$contador_Milan."<br>";
+        echo "Veces que se ha ido a Roma: ".$contador_Roma."<br>";
+        echo "Veces que se ha ido a Estambul: ".$contador_Estambul."<br>";
+        echo "Veces que se ha ido a Madrid: ".$contador_Madrid."<br>";
+        echo "Veces que se ha ido a Lima: ".$contador_Lima."<br>";
+        echo "Veces que se ha ido a Bilbao: ".$contador_Bilbao."<br>";
+    }
 
 #FUNCIÓN CUAL ES LA CIUDAD MÁS VISITADA---------------------------------------------------------------------------
-function Ciudad_mas(){
+function Ciudad_mas($array1){
 
 
 
@@ -221,13 +253,35 @@ function Ciudad_mas(){
 
 #FUNCIÓN CUALES SON LAS CIUDADES MENOS VISITADAS---------------------------------------------------------------------------
 function Ciudad_menos(){
+    $contador_Milan = 0;
+    $contador_Roma = 0;
+    $contador_Estambul = 0;
+    $contador_Madrid = 0;
+    $contador_Lima = 0;
+    $contador_Bilbao = 0;
 
-
-
-
-
-
-    
+    foreach ($array1 as $array_1) {
+        $Destino = $array_1["Destino"];
+    if ($Destino == "Milán") {
+        $contador_Milan++;
+        }
+    elseif($Destino == "Roma"){
+        $contador_Roma++; 
+        }
+    elseif($Destino == "Estambul"){
+        $contador_Estambul++; 
+        }
+    elseif($Destino == "Madrid"){
+        $contador_Madrid++; 
+        }
+    elseif($Destino == "Lima"){
+        $contador_Lima++; 
+        }
+    elseif($Destino == "Bilbao"){
+        $contador_Bilbao++; 
+        }
+    }
+    echo "Ciud".$contador_Milan."<br>";
 }
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE UN VUELO---------------------------------------------------------------------------
