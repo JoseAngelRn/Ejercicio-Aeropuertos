@@ -116,25 +116,71 @@ function Aviones_fabricante($array2){
 }
 
 #FUNCIÓN DESTINO CON MÁS CONEXIONES---------------------------------------------------------------------------
-function Destino_mas(){
+function Destino_mas($array1){
+    $contador_Milan = 0;
+    $contador_Roma = 0;
+    $contador_Estambul = 0;
+    $contador_Madrid = 0;
+    $contador_Lima = 0;
+    $contador_Bilbao = 0;
 
-
-
-
-
-
-    
+    foreach ($array1 as $array_1) {
+        $Destino = $array_1["Destino"];
+    if ($Destino == "Milán") {
+        $contador_Milan++;
+        }
+    elseif($Destino == "Roma"){
+        $contador_Roma++; 
+        }
+    elseif($Destino == "Estambul"){
+        $contador_Estambul++; 
+        }
+    elseif($Destino == "Madrid"){
+        $contador_Madrid++; 
+        }
+    elseif($Destino == "Lima"){
+        $contador_Lima++; 
+        }
+    elseif($Destino == "Bilbao"){
+        $contador_Bilbao++; 
+        }
+    }
+    $mas = max($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);    
+    echo "El destino con mas conexiones es: ".$Destino." con ".$mas." conexiones"."<br>";
 }
 
 #FUNCIÓN DESTINO CON MENOS CONEXIONES---------------------------------------------------------------------------
-function Destino_menos(){
+function Destino_menos($array1){
+    $contador_Milan = 0;
+    $contador_Roma = 0;
+    $contador_Estambul = 0;
+    $contador_Madrid = 0;
+    $contador_Lima = 0;
+    $contador_Bilbao = 0;
 
-
-
-
-
-
-    
+    foreach ($array1 as $array_1) {
+        $Destino = $array_1["Destino"];
+    if ($Destino == "Milán") {
+        $contador_Milan++;
+        }
+    elseif($Destino == "Roma"){
+        $contador_Roma++; 
+        }
+    elseif($Destino == "Estambul"){
+        $contador_Estambul++; 
+        }
+    elseif($Destino == "Madrid"){
+        $contador_Madrid++; 
+        }
+    elseif($Destino == "Lima"){
+        $contador_Lima++; 
+        }
+    elseif($Destino == "Bilbao"){
+        $contador_Bilbao++; 
+        }
+    }
+    $menos = min($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);
+    echo "El destino con menos conexiones es: ".$Destino." con ".$menos." conexiones"."<br>";
 }
 
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
