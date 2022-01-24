@@ -150,16 +150,18 @@ function Destino_mas($array1){
 }
 
 #FUNCIÓN DESTINO CON MENOS CONEXIONES---------------------------------------------------------------------------
-function Destino_menos($array1){
+/*function Destino_menos($array1){
     $contador_Milan = 0;
     $contador_Roma = 0;
     $contador_Estambul = 0;
     $contador_Madrid = 0;
     $contador_Lima = 0;
     $contador_Bilbao = 0;
+    $contador_Total = 0;
 
     foreach ($array1 as $array_1) {
         $Destino = $array_1["Destino"];
+
     if ($Destino == "Milán") {
         $contador_Milan++;
         }
@@ -178,11 +180,12 @@ function Destino_menos($array1){
     elseif($Destino == "Bilbao"){
         $contador_Bilbao++; 
         }
+    $contador_Total = min($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);
     }
-    $menos = min($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);
-    echo "El destino con menos conexiones es: ".$Destino." con ".$menos." conexiones"."<br>";
+    
+    echo "El destino con menos conexiones es: ".$Destino." con ".$contador_Total." conexiones"."<br>";
 }
-
+*/
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
 function Numero_Ciudad_Total(){
 
