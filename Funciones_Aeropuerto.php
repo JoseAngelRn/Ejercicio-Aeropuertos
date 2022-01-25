@@ -263,6 +263,20 @@ function Ciudad_mas($array1){
         $contador_Bilbao++; 
         }
     }
+    $array_nuevo =  array(
+    array("Visitas" => $contador_Milan, "Destino" => "Milán"),
+    array("Visitas" => $contador_Roma, "Destino" => "Roma"),
+    array("Visitas" => $contador_Estambul, "Destino" => "Estambul"),
+    array("Visitas" => $contador_Madrid, "Destino" => "Madrid"),
+    array("Visitas" => $contador_Lima, "Destino" => "Lima"),
+    array("Visitas" => $contador_Bilbao, "Destino" => "Bilbao")
+    );
+    
+    rsort($array_nuevo);
+    echo "La ciudad más visitada es: ";
+    $columna = (array_column($array_nuevo, "Destino"));
+    $maximo_columna = $columna[0];
+    echo $maximo_columna."<br>";
 } 
 
 #FUNCIÓN CUALES SON LAS CIUDADES MENOS VISITADAS---------------------------------------------------------------------------
@@ -295,24 +309,20 @@ function Ciudad_menos($array1){
         $contador_Bilbao++; 
         }
     }
-if ($contador_Milan <= $contador_Roma and $contador_Estambul and $contador_Madrid and $contador_Lima and $contador_Bilbao){
-        echo "La ciudad menos visitada es Milán";
-    } 
-elseif($contador_Roma <= $contador_Milan and $contador_Estambul and $contador_Madrid and $contador_Lima and $contador_Bilbao){
-    echo "La ciudad menos visitada es Roma";
-}
-elseif($contador_Estambul <= $contador_Milan and $contador_Roma and $contador_Madrid and $contador_Lima and $contador_Bilbao){
-    echo "La ciudad menos visitada es Estambul";
-}
-elseif($contador_Madrid <= $contador_Milan and $contador_Roma and $contador_Estambul and $contador_Lima and $contador_Bilbao){
-    echo "La ciudad menos visitada es Madrid";
-}
-elseif($contador_Lima <= $contador_Milan and $contador_Roma and $contador_Estambul and $contador_Madrid and $contador_Bilbao){
-    echo "La ciudad menos visitada es Lima";
-}
-elseif($contador_Bilbao <= $contador_Milan and $contador_Roma and $contador_Estambul and $contador_Madrid and $contador_Lima){
-    echo "La ciudad menos visitada es Bilbao";
-}
+    $array_nuevo =  array(
+        array("Visitas" => $contador_Milan, "Destino" => "Milán"),
+        array("Visitas" => $contador_Roma, "Destino" => "Roma"),
+        array("Visitas" => $contador_Estambul, "Destino" => "Estambul"),
+        array("Visitas" => $contador_Madrid, "Destino" => "Madrid"),
+        array("Visitas" => $contador_Lima, "Destino" => "Lima"),
+        array("Visitas" => $contador_Bilbao, "Destino" => "Bilbao")
+        );
+        
+        asort($array_nuevo);
+        echo "La ciudad menos visitada es: ";
+        $columna = (array_column($array_nuevo, "Destino"));
+        $maximo_columna = $columna[0];
+        echo $maximo_columna."<br>";
 }
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE UN VUELO---------------------------------------------------------------------------
