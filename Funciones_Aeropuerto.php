@@ -159,7 +159,7 @@ function Destino_mas($array1){
         $maximo_columna = $columna[0];
         $mas = max($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);    
     
-    echo "El destino con mas conexiones es: ".$maximo_columna." con ".$mas." conexiones"."<br>";
+    echo "El destino con mas conexiones es: "."<br>".$maximo_columna." con ".$mas." conexiones"."<br>";
 }
 
 #FUNCIÓN DESTINO CON MENOS CONEXIONES---------------------------------------------------------------------------
