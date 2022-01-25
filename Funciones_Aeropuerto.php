@@ -116,7 +116,6 @@ function Aviones_fabricante($array2){
 }
 
 #FUNCIÓN DESTINO CON MÁS CONEXIONES---------------------------------------------------------------------------
-#No acabada
 function Destino_mas($array1){
     $contador_Milan = 0;
     $contador_Roma = 0;
@@ -189,36 +188,11 @@ function Destino_mas($array1){
 */
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
 function Numero_Ciudad_Total($array1){
-    $contador_Milan = 0;
-    $contador_Roma = 0;
-    $contador_Estambul = 0;
-    $contador_Madrid = 0;
-    $contador_Lima = 0;
-    $contador_Bilbao = 0;  
+        
+    $columna = array_unique(array_column($array1, "Destino"));
+    $fin = array_intersect_key($array1, $columna);
 
-        foreach ($array1 as $array_1) {
-        $Destino = $array_1["Destino"];
-         if ($Destino == "Milán") {
-            $contador_Milan++;
-            }
-        elseif($Destino == "Roma"){
-            $contador_Roma++; 
-            }
-        elseif($Destino == "Estambul"){
-            $contador_Estambul++; 
-            }
-        elseif($Destino == "Madrid"){
-            $contador_Madrid++; 
-            }
-        elseif($Destino == "Lima"){
-            $contador_Lima++; 
-            }
-        elseif($Destino == "Bilbao"){
-            $contador_Bilbao++; 
-            }  
-}
-    $numero_total = $contador_Milan + $contador_Roma + $contador_Estambul + $contador_Madrid + $contador_Lima + $contador_Bilbao;
-    echo "El número total de ciudades visitadas es: ".$numero_total."<br>";
+    echo "El número total de ciudades visitadas es: ".count($fin)."<br>";
 }
 
 #FUNCIÓN LAS VECES QUE SE HAN IDO A UNA DETERMINADA CIUDAD---------------------------------------------------------------------------
