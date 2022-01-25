@@ -70,7 +70,7 @@ function Media_Horas_Total($array3, $EJ){
     }
         $EJ = $EJ/$contador;
         $EJ = $EJ/60;
-        echo "La media de horas voladas de todos los vuelos es: ".$EJ." Horas"."<br>";
+        echo "La media de horas voladas de todos los vuelos es: "."<br>".$EJ." Horas"."<br>";
     }
 
 #FUNCIÓN NÚMERO TOTAL DE PASAJEROS DE TODOS LOS VUELOS---------------------------------------------------------------------------
@@ -80,7 +80,7 @@ function Numero_Total_Pasajeros($array4, $EJ){
         
         $EJ = $EJ + $Pasajeros;
     }
-    echo "El número total de pasajeros de todos los vuelos es: ".$EJ."<br>";
+    echo "El número total de pasajeros de todos los vuelos es: "."<br>".$EJ."<br>";
 }
 
 #FUNCIÓN PASAJEROS TOTALES POR AVION---------------------------------------------------------------------------
@@ -93,7 +93,7 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
         $EJ = $EJ + $Pasajeros;
         }
     }
-    echo "El número total de pasajeros del avion: ".$EJ."<br>";
+    echo "El número total de pasajeros del avion: "."<br>".$EJ."<br>";
 }
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
@@ -111,8 +111,8 @@ function Aviones_fabricante($array2){
         $contador_Airbus++; 
         }
     }
-    echo "Números aviones Boeing: ".$contador_Boeing."<br>";
-    echo "Números aviones Airbus: ".$contador_Airbus."<br>";
+    echo "Números aviones Boeing: "."<br>".$contador_Boeing."<br>";
+    echo "Números aviones Airbus: "."<br>".$contador_Airbus."<br>";
 }
 
 #FUNCIÓN DESTINO CON MÁS CONEXIONES---------------------------------------------------------------------------
@@ -221,7 +221,7 @@ function Numero_Ciudad_Total($array1){
     $columna = array_unique(array_column($array1, "Destino"));
     $fin = array_intersect_key($array1, $columna);
 
-    echo "El número total de ciudades visitadas es: ".count($fin)."<br>";
+    echo "El número total de ciudades visitadas es: "."<br>".count($fin)."<br>";
 }
 
 #FUNCIÓN LAS VECES QUE SE HAN IDO A UNA DETERMINADA CIUDAD---------------------------------------------------------------------------
@@ -302,7 +302,7 @@ function Ciudad_mas($array1){
     );
     
     rsort($array_nuevo);
-    echo "La ciudad más visitada es: ";
+    echo "La ciudad más visitada es: "."<br>";
     $columna = (array_column($array_nuevo, "Destino"));
     $maximo_columna = $columna[0];
     echo $maximo_columna."<br>";
@@ -348,7 +348,7 @@ function Ciudad_menos($array1){
         );
         
         rsort($array_nuevo);
-        echo "Las ciudades menos visitadas es: ";
+        echo "Las ciudades menos visitadas es: "."<br>";
         $columna = (array_column($array_nuevo, "Destino"));
         $minimo_columna = $columna[0];
         $arrayCortado = (array_slice($array_nuevo, 2));
@@ -373,7 +373,7 @@ function Media_Horas($text, $array3, $EJ){
     }
         $EJ = $EJ/$contador;
         $EJ = $EJ/60;
-        echo "La media de horas voladas es: ".$EJ." Horas"."<br>";
+        echo "La media de horas voladas es: "."<br>".$EJ." Horas"."<br>";
     }
 
 ?>
