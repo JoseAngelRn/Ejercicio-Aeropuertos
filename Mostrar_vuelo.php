@@ -5,7 +5,7 @@ INCLUDE 'Funciones_Aeropuerto.php';
 $text = $_POST["Mostrar_Vuelos"];
 
 #REPRESENTACIÓN
-echo $text."<br>";
+echo "<h2>$text</h2>";
 Media_Pasajeros($text, $array4, $EJ);
 Destinos($text, $array1);
 Fabricante($text, $array2);
