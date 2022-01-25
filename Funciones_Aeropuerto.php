@@ -193,10 +193,26 @@ function Destino_menos($array1){
     elseif($Destino == "Bilbao"){
         $contador_Bilbao++; 
         }
-    $contador_Total = min($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);
     }
+        $array_nuevo =  array(
+            array("Visitas" => $contador_Milan, "Destino" => "Milán"),
+            array("Visitas" => $contador_Roma, "Destino" => "Roma"),
+            array("Visitas" => $contador_Estambul, "Destino" => "Estambul"),
+            array("Visitas" => $contador_Madrid, "Destino" => "Madrid"),
+            array("Visitas" => $contador_Lima, "Destino" => "Lima"),
+            array("Visitas" => $contador_Bilbao, "Destino" => "Bilbao")
+            );
+            echo "El destino con menos conexiones es: "."<br>";
+            rsort($array_nuevo);
+            $columna = (array_column($array_nuevo, "Destino"));
+            $minimo_columna = $columna[0];
+            $arrayCortado = (array_slice($array_nuevo, 2));
     
-    echo "El destino con menos conexiones es: ".$Destino." con ".$contador_Total." conexiones"."<br>";
+            foreach ($arrayCortado as $array_Cortado) {
+                $o = $array_Cortado["Destino"];
+                $minimo = min($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);
+                echo $o." con ".$minimo." conexiones"."<br>";
+            }
 }
 
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
