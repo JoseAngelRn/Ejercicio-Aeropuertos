@@ -16,12 +16,12 @@ if ($Vuelos == $text) {
     }
 }
     $EJ = $EJ/$contador;
-    echo "La media de pasajeros es: ".$EJ."<br>";
+    echo "La media de pasajeros es: "."<br>".$EJ."<br>";
 }
 
 #FUNCIÓN SABER ULTIMOS DESTINO-------------------------------------------------------------------------------------------------
 function Destinos($text, $array1){
-    echo "Los destinos a los que ha ido el avión han sido: ";
+    echo "Los destinos a los que ha ido el avión han sido: "."<br>";
 foreach ($array1 as $array_1) {
     $Destino = $array_1["Destino"];
     $Vuelos = $array_1["Vuelo"];
@@ -41,7 +41,7 @@ foreach ($array2 as $array_2) {
     $Vuelos = $array_2["Vuelo"];
 
 if ($Vuelos == $text) {
-    echo "El fabricante es: ".$Fabricante."<br>";
+    echo "El fabricante es: "."<br>".$Fabricante."<br>";
     }
 }
 }
@@ -56,7 +56,7 @@ if ($Vuelos == $text) {
     $EJ = $EJ + $Duracion_Minutos;
     }
 }
-echo "Los minutos totales de vuelo han sido: ".$EJ."<br>";
+echo "Los minutos totales de vuelo han sido: "."<br>".$EJ."<br>";
 }
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE TODOS LOS VUELOS---------------------------------------------------------------------------
