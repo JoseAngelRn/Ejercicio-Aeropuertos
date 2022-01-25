@@ -318,11 +318,16 @@ function Ciudad_menos($array1){
         array("Visitas" => $contador_Bilbao, "Destino" => "Bilbao")
         );
         
-        asort($array_nuevo);
+        rsort($array_nuevo);
         echo "La ciudad menos visitada es: ";
         $columna = (array_column($array_nuevo, "Destino"));
-        $maximo_columna = $columna[0];
-        echo $maximo_columna."<br>";
+        $minimo_columna = $columna[0];
+        $arrayCortado = (array_slice($array_nuevo, 2));
+
+        foreach ($arrayCortado as $array_Cortado) {
+            $o = $array_Cortado["Destino"];
+            echo $o." ";
+        }
 }
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE UN VUELO---------------------------------------------------------------------------
