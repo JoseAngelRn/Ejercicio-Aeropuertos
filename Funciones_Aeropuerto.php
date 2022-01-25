@@ -319,7 +319,7 @@ function Ciudad_menos($array1){
         );
         
         rsort($array_nuevo);
-        echo "La ciudad menos visitada es: ";
+        echo "Las ciudades menos visitadas es: ";
         $columna = (array_column($array_nuevo, "Destino"));
         $minimo_columna = $columna[0];
         $arrayCortado = (array_slice($array_nuevo, 2));
