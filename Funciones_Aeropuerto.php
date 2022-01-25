@@ -145,12 +145,25 @@ function Destino_mas($array1){
         $contador_Bilbao++; 
         }
     }
-    $mas = max($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);    
-    echo "El destino con mas conexiones es: ".$Destino." con ".$mas." conexiones"."<br>";
+    $array_nuevo =  array(
+        array("Visitas" => $contador_Milan, "Destino" => "Milán"),
+        array("Visitas" => $contador_Roma, "Destino" => "Roma"),
+        array("Visitas" => $contador_Estambul, "Destino" => "Estambul"),
+        array("Visitas" => $contador_Madrid, "Destino" => "Madrid"),
+        array("Visitas" => $contador_Lima, "Destino" => "Lima"),
+        array("Visitas" => $contador_Bilbao, "Destino" => "Bilbao")
+        );
+        
+        rsort($array_nuevo);
+        $columna = (array_column($array_nuevo, "Destino"));
+        $maximo_columna = $columna[0];
+        $mas = max($contador_Milan, $contador_Roma, $contador_Estambul, $contador_Madrid, $contador_Lima, $contador_Bilbao);    
+    
+    echo "El destino con mas conexiones es: ".$maximo_columna." con ".$mas." conexiones"."<br>";
 }
 
 #FUNCIÓN DESTINO CON MENOS CONEXIONES---------------------------------------------------------------------------
-/*function Destino_menos($array1){
+function Destino_menos($array1){
     $contador_Milan = 0;
     $contador_Roma = 0;
     $contador_Estambul = 0;
@@ -185,7 +198,7 @@ function Destino_mas($array1){
     
     echo "El destino con menos conexiones es: ".$Destino." con ".$contador_Total." conexiones"."<br>";
 }
-*/
+
 #FUNCIÓN EL NÚMERO TOTALES DE CIUDADES VISITADAS---------------------------------------------------------------------------
 function Numero_Ciudad_Total($array1){
         
