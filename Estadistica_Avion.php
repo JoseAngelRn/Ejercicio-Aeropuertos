@@ -5,6 +5,7 @@ INCLUDE 'Funciones_Aeropuerto.php';
 $text = $_POST["Estadisticas_avion"];
 
 #REPRESENTACIÓN
+echo "<h2 style='color:#2d4b6e;'>".$text."</h2>";
 Destinos($text, $array1);
 Fabricante($text, $array2);
 Minutos_Totales_Vuelo($text, $array3, $EJ);
