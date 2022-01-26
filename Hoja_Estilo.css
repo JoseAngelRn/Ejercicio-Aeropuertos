@@ -14,3 +14,19 @@ fieldset {
             border-width: 4px;
             border-color: rgb(45, 75, 110);
 }
+
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(45, 75, 110);
+    background-color: rgb(227, 230, 233);
+    border-radius: 6px;
+    border: 2px solid rgb(31, 30, 30);
+  }
+  .boton:hover{
+    color: rgb(45, 75, 110);
+    background-color: #ffffff;
+  }
