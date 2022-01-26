@@ -16,7 +16,7 @@ if ($Vuelos == $text) {
     }
 }
     $EJ = $EJ/$contador;
-    echo "<strong>La media de pasajeros es: </strong>"."<br>".$EJ."<br>";
+    echo "<strong>La media de pasajeros es: </strong>"."<br>".$EJ." personas"."<br>";
 }
 
 #FUNCIÓN SABER ULTIMOS DESTINO-------------------------------------------------------------------------------------------------
@@ -56,7 +56,7 @@ if ($Vuelos == $text) {
     $EJ = $EJ + $Duracion_Minutos;
     }
 }
-echo "<strong>Los minutos totales de vuelo han sido: </strong>"."<br>".$EJ."<br>";
+echo "<strong>Los minutos totales de vuelo han sido: </strong>"."<br>".$EJ." minutos"."<br>";
 }
 
 #FUNCIÓN MEDIA DE HORAS VOLADAS DE TODOS LOS VUELOS---------------------------------------------------------------------------
@@ -80,7 +80,7 @@ function Numero_Total_Pasajeros($array4, $EJ){
         
         $EJ = $EJ + $Pasajeros;
     }
-    echo "<strong>El número total de pasajeros de todos los vuelos es: </strong>"."<br>".$EJ."<br>";
+    echo "<strong>El número total de pasajeros de todos los vuelos es: </strong>"."<br>".$EJ." personas"."<br>";
 }
 
 #FUNCIÓN PASAJEROS TOTALES POR AVION---------------------------------------------------------------------------
@@ -93,7 +93,7 @@ function Numero_Total_Pasajeros_Avion($array4, $text, $EJ){
         $EJ = $EJ + $Pasajeros;
         }
     }
-    echo "<strong>El número total de pasajeros del avion: </strong>"."<br>".$EJ."<br>";
+    echo "<strong>El número total de pasajeros del avion: </strong>"."<br>".$EJ." personas"."<br>";
 }
 
 #FUNCIÓN NÚMERO DE AVIONES POR FABRICANTE---------------------------------------------------------------------------
@@ -221,7 +221,7 @@ function Numero_Ciudad_Total($array1){
     $columna = array_unique(array_column($array1, "Destino"));
     $fin = array_intersect_key($array1, $columna);
 
-    echo "<strong>El número total de ciudades visitadas es: </strong>"."<br>".count($fin)."<br>";
+    echo "<strong>El número total de ciudades visitadas es: </strong>"."<br>".count($fin)." ciudades"."<br>";
 }
 
 #FUNCIÓN LAS VECES QUE SE HAN IDO A UNA DETERMINADA CIUDAD---------------------------------------------------------------------------
