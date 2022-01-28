@@ -1,5 +1,5 @@
 <?php
-INCLUDE 'Funciones_Aeropuerto.php';
+INCLUDE_ONCE 'Funciones_Aeropuerto.php';
 
 #REPRESENTACIÓN
 echo "<h2 style='color:#2d4b6e;'>"."Las estadisticas del aeropuerto son: "."</h2>";

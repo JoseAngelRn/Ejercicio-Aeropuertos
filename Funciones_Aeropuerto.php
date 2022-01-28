@@ -1,5 +1,5 @@
 <?php
-INCLUDE 'Arraysdb.php';
+INCLUDE_ONCE 'Arraysdb.php';
 
 $EJ = 0;
 
