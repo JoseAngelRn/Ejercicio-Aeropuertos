@@ -5,6 +5,7 @@ INCLUDE_ONCE 'Funciones_Aeropuerto.php';
 $text = $_POST["Estadisticas_avion"];
 
 #REPRESENTACIÓN
+echo "<body style='background-color: rgb(227, 230, 233);'></body>";
 echo "<h2 style='color:#2d4b6e;'>"."El avión elegido ha sido: ".$text."</h2>";
 Destinos($text, $array1);
 Fabricante($text, $array2);
