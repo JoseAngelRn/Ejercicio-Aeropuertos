@@ -376,6 +376,7 @@ function Media_Horas($text, $array3, $EJ){
         echo "<strong>La media de horas voladas es: </strong>"."<br>".$EJ." Horas"."<br>";
     }
 
+    #FUNCIÓN MEDIA DE COMBUSTIBLE------------------------------------------------------------------------------------------------------------
     function Media_Combustible($text, $array5, $EJ){
         $contador = 0;
         foreach ($array5 as $array_5) {
@@ -391,6 +392,7 @@ function Media_Horas($text, $array3, $EJ){
             echo "<strong>La media de combustible del avión es: </strong>"."<br>".$EJ." Litros"."<br>";
         }
 
+#FUNCIÓN MEDIA DE LOS MINUTOS TOTALES DE UN VUELO---------------------------------------------------------------------------------------------
     function Media_Minutos_Totales_Vuelo($text, $array3, $EJ){
         $contador = 0;
         foreach ($array3 as $array_3) {
@@ -406,8 +408,7 @@ function Media_Horas($text, $array3, $EJ){
         echo "<strong>La media de los minutos totales del vuelo han sido: </strong>"."<br>".$EJ." minutos"."<br>";
         }
 
-
-#FUNCIÓN CUALES SON LAS CIUDADES MÁS VISITADAS---------------------------------------------------------------------------
+#FUNCIÓN CUALES SON LAS 3 CIUDADES MÁS VISITADAS---------------------------------------------------------------------------
 function Ciudad_mas_3($array1){
     $contador_Milan = 0;
     $contador_Roma = 0;
