@@ -21,7 +21,15 @@ $array2  = array(
     array("Vuelo" => "Vueling-ZK87", "Fabricante" => "Airbus"),
     array("Vuelo" => "Volotea-UA21", "Fabricante" => "Boeing"),
     array("Vuelo" => "Iberia-WH44", "Fabricante" => "Boeing"),
-    array("Vuelo" => "Ryanair-EL00", "Fabricante" => "Airbus")
+    array("Vuelo" => "Ryanair-EL00", "Fabricante" => "Airbus"),
+    array("Vuelo" => "Vueling-WE45", "Fabricante" => "Boeing"),
+    array("Vuelo" => "Volotea-IJ30", "Fabricante" => "Lockheed Martin"),
+    array("Vuelo" => "Iberia-QW00", "Fabricante" => "Airbus"),
+    array("Vuelo" => "Ryanair-LK11", "Fabricante" => "Lockheed Martin"),
+    array("Vuelo" => "Vueling-RY23", "Fabricante" => "Airbus"),
+    array("Vuelo" => "Volotea-HG77", "Fabricante" => "Lockheed Martin"),
+    array("Vuelo" => "Iberia-PL81", "Fabricante" => "Airbus"),
+    array("Vuelo" => "Ryanair-FV19", "Fabricante" => "Airbus")
 );
 
 $array3 = array(
@@ -63,6 +71,18 @@ $array4 = array(
     array("Vuelo" => "Vueling-ZK87", "Pasajeros" => 82)
 );
 
+$array5 = array(
+    array("Vuelo" => "Vueling-AE12", "Combustible" => 390),
+    array("Vuelo" => "Volotea-EA21", "Combustible" => 421),
+    array("Vuelo" => "Iberia-WE44", "Combustible" => 389),
+    array("Vuelo" => "Ryanair-EW44", "Combustible" => 387),
+    array("Vuelo" => "Vueling-ZK87", "Combustible" => 413),
+    array("Vuelo" => "Volotea-UA21", "Combustible" => 379),
+    array("Vuelo" => "Iberia-WH44", "Combustible" => 388),
+    array("Vuelo" => "Ryanair-EL00", "Combustible" => 410),
+    array("Vuelo" => "Vueling-AE12", "Combustible" => 399),
+    array("Vuelo" => "Volotea-EA21", "Combustible" => 404)
+);
 
 
 

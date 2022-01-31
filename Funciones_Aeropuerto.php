@@ -376,4 +376,84 @@ function Media_Horas($text, $array3, $EJ){
         echo "<strong>La media de horas voladas es: </strong>"."<br>".$EJ." Horas"."<br>";
     }
 
+    function Media_Combustible($text, $array5, $EJ){
+        $contador = 0;
+        foreach ($array5 as $array_5) {
+            $Combustible = $array_5["Combustible"];
+            $Vuelos = $array_5["Vuelo"];
+        
+        if ($Vuelos == $text) {
+            $EJ = $EJ + $Combustible;
+            $contador++;
+            }
+        }
+            $EJ = $EJ/$contador;
+            echo "<strong>La media de combustible del avión es: </strong>"."<br>".$EJ." Litros"."<br>";
+        }
+
+    function Media_Minutos_Totales_Vuelo($text, $array3, $EJ){
+        $contador = 0;
+        foreach ($array3 as $array_3) {
+            $Duracion_Minutos = $array_3["Duracion_Minutos"];
+            $Vuelos = $array_3["Vuelo"];
+            
+        if ($Vuelos == $text) {
+            $EJ = $EJ + $Duracion_Minutos;
+            $contador++;
+            }
+        }
+        $EJ = $EJ/$contador;
+        echo "<strong>La media de los minutos totales del vuelo han sido: </strong>"."<br>".$EJ." minutos"."<br>";
+        }
+
+
+#FUNCIÓN CUALES SON LAS CIUDADES MÁS VISITADAS---------------------------------------------------------------------------
+function Ciudad_mas_3($array1){
+    $contador_Milan = 0;
+    $contador_Roma = 0;
+    $contador_Estambul = 0;
+    $contador_Madrid = 0;
+    $contador_Lima = 0;
+    $contador_Bilbao = 0;
+
+    foreach ($array1 as $array_1) {
+        $Destino = $array_1["Destino"];
+    if ($Destino == "Milán") {
+        $contador_Milan++;
+        }
+    elseif($Destino == "Roma"){
+        $contador_Roma++; 
+        }
+    elseif($Destino == "Estambul"){
+        $contador_Estambul++; 
+        }
+    elseif($Destino == "Madrid"){
+        $contador_Madrid++; 
+        }
+    elseif($Destino == "Lima"){
+        $contador_Lima++; 
+        }
+    elseif($Destino == "Bilbao"){
+        $contador_Bilbao++; 
+        }
+    }
+    $array_nuevo =  array(
+    array("Visitas" => $contador_Milan, "Destino" => "Milán"),
+    array("Visitas" => $contador_Roma, "Destino" => "Roma"),
+    array("Visitas" => $contador_Estambul, "Destino" => "Estambul"),
+    array("Visitas" => $contador_Madrid, "Destino" => "Madrid"),
+    array("Visitas" => $contador_Lima, "Destino" => "Lima"),
+    array("Visitas" => $contador_Bilbao, "Destino" => "Bilbao")
+    );
+    
+    asort($array_nuevo);
+    echo "<br>"."<strong>Las 3 ciudades más visitadas son: </strong>"."<br>";
+    $columna = (array_column($array_nuevo, "Destino"));
+    $arrayCortado = (array_slice($array_nuevo, 3));
+
+    foreach ($arrayCortado as $array_Cortado) {
+        $o = $array_Cortado["Destino"];
+        echo $o." ";
+} 
+}
 ?>

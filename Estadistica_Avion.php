@@ -13,4 +13,5 @@ Minutos_Totales_Vuelo($text, $array3, $EJ);
 Media_Horas($text, $array3, $EJ);
 Media_Pasajeros($text, $array4, $EJ);
 Numero_Total_Pasajeros_Avion($array4, $text, $EJ);
+Media_Minutos_Totales_Vuelo($text, $array3, $EJ);
 ?>
